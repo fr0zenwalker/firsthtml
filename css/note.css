@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+/*********************************************************
+
+                        网页内容布局
+
+*********************************************************/
+img{
+	max-width: 100%;
+}
+/*****************************************
+                HEAD
+******************************************/
+/*将网页头部文字居中*/
+#title{
+	text-align: center;
+}
+#header{
+	float:left;	
+}
+/*****************************************
+                BODY
+******************************************/
+
+/*将body背景图铺满整个页面*/
+html,body{
+	height: 100%;
+	width: 100%
+}
+#title{
+	background-color:wheat;
+}
+body{
+	background-image:url("");
+	background-size:cover;
+	background-attachment: fixed;
+	margin-top: -3%;
+}
+section,footer{
+	background-color: antiquewhite;
+}
+section{
+	height: 900px;
+}
+/*将body中的插图居中*/
+#wrapper{
+	max-width: 940px;
+	margin: -30px auto;
+	padding: 0 5%;
+}
+/*将导航元素中的文本居中，改边距*/
+nav{
+	text-align: center;
+	margin: 0 0 -20px ;
+}
+nav li{
+	display: inline-block;
+	margin: 0 30px;
+}
+#side{
+	position: fixed;
+	top:600px;
+	left:0;
+}
+.table ul{
+	background-image: url("../img/www.momi8.com_20070413131353133.gif")
+}
+/*******************
+       添加侧边栏
+ *******************/
+.table{
+	display: block;
+	width:32%;
+	height:130%;
+     position: relative;
+	right: 300px;
+	bottom: 105px;
+}
+.table ul{
+	
+	height: 109.5%;
+	text-align: center;
+}
+.table li{
+	height: 40px;
+	width:50px;
+     position: relative;
+	padding: 45%;
+	float: left;
+	padding-left: 20px;
+	font-size: 0.9em;
+}
+#class1{
+	display: block;
+	font-size: 0.8em;
+    width: 240px;
+	height: 230px;
+	text-align: left;
+}
+#class2{
+	display: block;
+	font-size: 0.8em;
+    width: 240px;
+	height: 230px;
+	text-align: left;
+}
+#class3{
+	display: block;
+	font-size: 0.8em;
+    width: 240px;
+	height: 230px;
+	text-align: left;
+}
+/*****************************************
+                BOT
+******************************************/
+footer{
+	padding: 100px;
+	text-align: center;
+	font-size: 1em;
+}
+footer img{
+	position: relative;
+	top: 120px;
+}
+footer p{
+	display: block;
+	position: relative;
+	top: 120px
+}
+/************************************************************
+
+                          网页内容修饰
+
+*************************************************************/
+
+/*****************************************
+                颜色
+******************************************/
+/*将网页主标题设置为红色*/
+h1{
+	color: red;
+}
+/*鼠标滑过选项变成白色*/
+nav a.option:hover{
+	color: antiquewhite;
+}
+/*底部文字设置为银色*/
+footer{
+	color: silver;
+	clear:both;
+}
+/*图片下面文字设置为黄色*/
+#gallery li a p{
+	font-size: 1.2em;
+	color: yellow;
+}
+/*鼠标滑过图片底部文字变成暗红色*/
+#gallery li a p:hover{
+	color: darkred;
+}
+h3{
+	color:chocolate;
+}
+/*****************************************
+                字体
+******************************************/
+/*给H1标题换字体调边距和字体大小*/
+h1{
+	font-family: 'Marck Script',cursive;
+	margin: 40px 0;
+	font-size: 50px;
+	line-height: 80px;
+	padding-top: 1.5%;
+}
+/*给H2标题换成楷体调边距和字体大小*/
+h2{
+	font-family: 'KaiTI',cursive;
+	margin: 40px 0;
+	font-size: 30px;
+	border-bottom-style: dashed;
+	border-color: silver;
+}
+/*给wrapper里的字体调成黑体*/
+#wrapper{
+	font-family: 'SimHei',cursive;
+	font-size: 1.5em;
+}
+.option{
+	font-weight: 800;
+	padding: 0 20px;
+}
+/*修改图片下部文字的大小*/
+#gallery li a p{
+	font-size: 0.8em;
+}
+
+/*****************************************
+                主页图片
+******************************************/
+/*去掉图片前面的原点*/
+#gallery{
+	list-style:none;
+}
+/*使图片展示形式为float型*/
+#gallery li{
+	float: left;
+	width: 40%;
+	margin: 5%;
+}
+/*去掉图片文字链接的下滑线*/
+#gallery li a{
+	text-decoration: none;
+}
+/*去掉三个选项的下滑线*/
+nav li a{
+	text-decoration: none;
+	color:black;
+}
+
